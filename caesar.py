@@ -20,7 +20,8 @@ def rotate_character(text, rot):
             cipher+=charNum
             continue
         code = charNum + rot
-        if item in string.ascii_uppercase:
+        if item in alpha:
+        # if item in string.ascii_uppercase:
             if code < 26:
                 cipher = cipher + alpha[code]
             else:
